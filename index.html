@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ludo Mission comingsoon </title>
+
+
+<link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">
+    
+    <!-- All CSS Plugins -->
+    <link rel="stylesheet" type="text/css" href="css/plugin.css">
+    
+    <!-- Main CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <!-- Google Web Fonts  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
+    
+</head>
+<body>
+ <!-- Home Section Start -->
+    <section class="home-section-background padding-bottom-0">
+         <div class="container">
+        
+        
+   <!-- Logo Start -->
+            <div class="text-center">
+                   <h1>Ludo Mission</h1>
+                </div>
+                <!-- Logo End -->
+
+  
+            <div class="row">
+                
+                 <div class="col-md-12">
+                     
+                      
+                      <!-- Home Section Heading Start -->
+                      <div class="header-section margin-top-40 margin-bottom-40">
+                          
+                             <div class="text-center">
+                               <h2>Ludo Mission is comming on 11-12-2020</h2>
+                            <p>First 500 User will get 50 coins reward</p>
+				     
+                           </div>
+			      
+    
+    
+    
+  </div>
+                        </div>
+                        <!-- Home Section Heading End -->
+                       
+                           
+                           
+                           <!-- CountDown Timer Start -->
+                           <div class="row">
+                                <div class="countdown">
+                                    
+                                    <div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+                                       <div class="countdown-timer bg-color-1">
+                                        <span class="days">10</span>
+                                        <p class="days_ref">days</p>
+                                       </div>
+                                    </div>
+                                    
+                                    <div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+                                      <div class="countdown-timer bg-color-4">
+                                        <span class="hours">05</span>
+                                        <p class="hours_ref">hours</p>
+                                       </div>
+                                    </div>
+                                    
+                                    <div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+                                      <div class="countdown-timer bg-color-6">
+                                        <span class="minutes">00</span>
+                                        <p class="minutes_ref">minutes</p>
+                                       </div>
+                                    </div>
+                                    
+                                    <div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+                                       <div class="countdown-timer bg-color-2">
+                                        <span class="seconds">00</span>
+                                        <p class="seconds_ref">seconds</p>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <!--  CountDown Timer End -->   
+                     
+                   </div>
+              </div>
+            </div>
+        </section>
+        <!-- Home Section End -->
+   <script>
+// Set the date we're counting down to
+var countDownDate = new Date("dec 11, 2020 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>     
+
+</body>
+</html>
